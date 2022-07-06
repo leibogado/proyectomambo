@@ -777,6 +777,34 @@
     }
 
 /*Arquitectura/*/
+/*/TRABAJANDO CON BOOTSTRAP/*/
+.navbar-nav{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0px;
+
+}
+.navbar-toggler{
+    background-color: #78ACAC;
+    color: #FFFFFF;
+}
+.navbar-toggler-icon{
+    color: #FFFFFF;
+    font-weight: bolder;
+font-style: normal;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-fluid{
+    justify-content: center;
+}
+.navbar-collapse{
+    display: flex;
+    text-align: left;
+}
 .p_img-arq{
  color: #AC7878;
  background-color: #FFFFFF;
@@ -786,398 +814,61 @@
 text-shadow: 2px 2px 2px #797979;
 font-weight: bold;
 }
+.card-text{
+    font-family: 'Red Hat Display', sans-serif; 
+    text-decoration: none;
+    color: #78ACAC;
+ 
+}
 
 .arq-body{
     background: linear-gradient(to bottom, #797979, white);
-    padding-left: 5rem;
-    padding-right: 5rem;
     padding-top: 0%;
     padding-bottom: 1rem;
 }
-/*MAIN DESKTOP ARQUITECTURA/*/
-@media only screen and (min-width: 1024px){
-.arq_main{
-    display: flex;
-    flex-direction: row;
-}
-.arq_main_article-textos{
+.card-title{
     font-family: 'Red Hat Display', sans-serif; 
     text-decoration: none;
-}
-.arq_main-textoppal{
-    font-weight: normal;
-    font-size: 2rem;
-    color: #FFFFFF;
-    width: 20rem;
-}
-.arq_main-textoservicio{
-    font-weight: normal;
-    color: #FFFFFF;
-    background-color: #AC7878;
-    border-radius: 2rem;
-    width: 20rem;
-    padding: 3rem;
-    font-size: large;
-}
-.arq_main-textodestacado{
-    font-weight: normal;
     color: #78ACAC;
-    width: 20rem;
-    font-size: large;
-    background-color: #FFFFFF80;
-    border-radius: 2rem;
-    padding: 3rem;
-    margin-top: 3rem;
+    font-weight: bold;
 }
-.arq_main-article-trabajos{
+.accordion-button{
+    background-color: #AC7878;
     font-family: 'Red Hat Display', sans-serif; 
     text-decoration: none;
-    font-weight: normal;
+    font-weight: bold;
     color: #FFFFFF;
 }
-.arq_main-secciones{
- display: flex;
- flex-direction: column;
+.accordion-button:not(.collapsed) {
+    background-color: #ffffff;
+    color: #78ACAC;
 }
-
+.collapse{
+    color: #797979;
+}
+.btn-primary{
+ background-color: #78ACAC;
+ border-color: #797979;
+}
+.btn-primary:hover{
+    background-color: #AC7878;
+    border-color: #FFFFFF;
+}
 .arq_main-img{
-    box-shadow: 10px 5px 5px #797979;
-    border-radius: 0.5rem;
-    position: relative;
-    float: left;
-    width: 30rem;
-    margin: 0.5rem;
-    overflow: hidden;
+    width: 18rem;}
+    .carousel-inner {
+   width: 18rem;
 }
-.arq-imgtex1{
-    position: relative;
-    display: inline-block;
-    text-align: center;
+.carouselExampleCaptions{
+    height: 18rem;
 }
-.arq-txt1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.arq_main{
+    font-family: 'Red Hat Display', sans-serif; 
+    text-decoration: none;
     font-weight: bold;
     color: #FFFFFF;
-    text-shadow: 2px 2px 2px #797979
 }
 
-.arq_main-img1{
-    box-shadow: 10px 5px 5px #797979;
-    border-radius: 0.5rem;
-    position: relative;
-    float: left;
-    width: 30rem;
-    margin: 2rem;
-    overflow: hidden;
-}
-.arq_main-img1:hover{
-    opacity: 50%;
-}
-.arq-imgtex2{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-.arq-txt2{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #797979
-}
-
-.arq_main-img2{
-    box-shadow: 10px 5px 5px #797979;
-    border-radius: 0.5rem;
-    position: relative;
-    float: left;
-    width: 30rem;
-    margin: 2rem;
-    overflow: hidden;
-}
-.arq_main-img2:hover{
-    opacity: 50%;
-}
-
-.videoarq{
-    width: 30rem;
-    box-shadow: 10px 5px 5px #797979;
-    border-radius: 0.5rem;
-    margin: 2rem;
-}
-}
-/*MAIN TABLET ARQUITECTURA/*/
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    .arq_main{
-        display: flex;
-        flex-direction: column;
-    }
-    .arq_main-article-trabajos{
-        display: flex;
-        flex-direction: row;
-    }
-    .arq_main-h2{
-        padding: 2rem;
-        margin-top: 2rem;
-        border-radius: 2rem;
-
-    }
-    .arq_main_article-textos{
-        font-family: 'Red Hat Display', sans-serif; 
-        text-decoration: none;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-    }
-    .arq_main-textoppal{
-        font-weight: normal;
-        font-size:medium;
-        color: #FFFFFF;
-    }
-    .arq_main-textoservicio{
-        font-weight: normal;
-        color: #FFFFFF;
-        background-color: #AC7878;
-        border-radius: 2rem;
-        padding: 3rem;
-        font-size: large;
-        margin: 2rem;
-    }
-    .arq_main-textodestacado{
-        font-weight: normal;
-        color: #78ACAC;
-        font-size: large;
-        background-color: #FFFFFF80;
-        border-radius: 2rem;
-        padding: 3rem;
-        margin-top: 3rem;
-        margin: 2rem;
-    }
-    .arq_main-article-trabajos{
-        font-family: 'Red Hat Display', sans-serif; 
-        text-decoration: none;
-        font-weight: normal;
-        color: #FFFFFF;
-    }
-    .arq_main-secciones{
-     display: flex;
-     flex-direction: column;
-    }
-    
-    .arq_main-img{
-        box-shadow: 10px 5px 5px #797979;
-        border-radius: 2rem;
-        position: relative;
-        float: left;
-        width: 20rem;
-        margin: 2rem;
-        overflow: hidden;
-    }
-    .arq-imgtex1{
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
-    .arq-txt1{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-weight: bold;
-        color: #FFFFFF;
-        text-shadow: 2px 2px 2px #797979
-    }
-    
-    .arq_main-img1{
-        box-shadow: 10px 5px 5px #797979;
-        border-radius: 2rem;
-        position: relative;
-        float: left;
-        width: 20rem;
-        margin: 2rem;
-        overflow: hidden;
-    }
-    .arq_main-img1:hover{
-        opacity: 50%;
-    }
-    .arq-imgtex2{
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
-    .arq-txt2{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-weight: bold;
-        color: #FFFFFF;
-        text-shadow: 2px 2px 2px #797979
-    }
-    
-    .arq_main-img2{
-        box-shadow: 10px 5px 5px #797979;
-        border-radius: 2rem;
-        position: relative;
-        float: left;
-        width: 20rem;
-        margin: 2rem;
-        overflow: hidden;
-    }
-    .arq_main-img2:hover{
-        opacity: 50%;
-    }
-    
-    .videoarq{
-        width: 20rem;
-        box-shadow: 10px 5px 5px #797979;
-        border-radius: 2rem;
-        margin: 2rem;
-    }
-}
-/*MAIN MOBILE ARQUITECTURA/*/
-@media only screen and (max-width: 768px){
-    .arq_main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .arq_main-article-trabajos{
-        display: flex;
-        flex-direction: column;
-    }
-    .arq_main-h2{
-        padding: 2rem;
-        margin-top: 2rem;
-        border-radius: 2rem;
-
-    }
-    .arq_main_article-textos{
-        background-color: #797979;
-        border-radius: 2rem;
-        font-family: 'Red Hat Display', sans-serif; 
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 2rem;
-        margin: 1rem;
-        width: 100%;
-    }
-    .arq_main-textoppal{
-        font-weight: normal;
-        font-size:medium;
-        color: #FFFFFF;
-        font-size: large;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-    .arq_main-textoservicio{
-        font-weight: normal;
-        color: #FFFFFF;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        background-color: #AC7878;
-        border-radius: 0.5rem;
-        scroll-padding-bottom: 1rem;
-
-    }
-    .arq_main-textodestacado{
-        font-weight: normal;
-        color: #FFFFFF;
-        font-size: medium;
-        font-weight: bold;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        border-radius: 0.5rem;
-    }
-    .arq_main-article-trabajos{
-        font-family: 'Red Hat Display', sans-serif; 
-        text-decoration: none;
-        font-weight: normal;
-        color: #FFFFFF;
-    }
-    .arq_main-secciones{
-     display: flex;
-     flex-direction: column;
-    }
-    
-    .arq_main-img{
-        box-shadow: 10px 5px 5px #797979;
-        border-radius: 2rem;
-        position: relative;
-        float: left;
-        width: 15rem;
-        margin: 2rem;
-        overflow: hidden;
-    }
-    .arq-imgtex1{
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
-    .arq-txt1{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-weight: bold;
-        color: #FFFFFF;
-        text-shadow: 2px 2px 2px #797979
-    }
-    
-    .arq_main-img1{
-        box-shadow: 10px 5px 5px #797979;
-        border-radius: 2rem;
-        position: relative;
-        float: left;
-        width: 15rem;
-        margin: 2rem;
-        overflow: hidden;
-    }
-    .arq_main-img1:hover{
-        opacity: 50%;
-    }
-    .arq-imgtex2{
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
-    .arq-txt2{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-weight: bold;
-        color: #FFFFFF;
-        text-shadow: 2px 2px 2px #797979
-    }
-    
-    .arq_main-img2{
-        box-shadow: 10px 5px 5px #797979;
-        border-radius: 2rem;
-        position: relative;
-        float: left;
-        width: 15rem;
-        margin: 2rem;
-        overflow: hidden;
-    }
-    .arq_main-img2:hover{
-        opacity: 50%;
-    }
-    
-    .videoarq{
-        width: 15rem;
-        box-shadow: 10px 5px 5px #797979;
-        border-radius: 2rem;
-        margin: 2rem;
-    }
-}
 /*Diseño/*/
 .dise-body{
     background: linear-gradient(to bottom, #797979, white);
