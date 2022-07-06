@@ -777,6 +777,16 @@
     }
 
 /*Arquitectura/*/
+.p_img-arq{
+ color: #AC7878;
+ background-color: #FFFFFF;
+ border-radius: 00.5rem;
+}
+.h5_img-arq{
+text-shadow: 2px 2px 2px #797979;
+font-weight: bold;
+}
+
 .arq-body{
     background: linear-gradient(to bottom, #797979, white);
     padding-left: 5rem;
@@ -832,11 +842,11 @@
 
 .arq_main-img{
     box-shadow: 10px 5px 5px #797979;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     position: relative;
     float: left;
     width: 30rem;
-    margin: 2rem;
+    margin: 0.5rem;
     overflow: hidden;
 }
 .arq-imgtex1{
@@ -856,7 +866,7 @@
 
 .arq_main-img1{
     box-shadow: 10px 5px 5px #797979;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     position: relative;
     float: left;
     width: 30rem;
@@ -883,7 +893,7 @@
 
 .arq_main-img2{
     box-shadow: 10px 5px 5px #797979;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     position: relative;
     float: left;
     width: 30rem;
@@ -897,7 +907,7 @@
 .videoarq{
     width: 30rem;
     box-shadow: 10px 5px 5px #797979;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     margin: 2rem;
 }
 }
