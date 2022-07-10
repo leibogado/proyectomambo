@@ -14,13 +14,14 @@
 </head>
 <body class="index-body">
     <header class="header">
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"><img class="pages-isologo-encabezado" src="./Recursos/isologosinfondo.png" alt="isologosinfondo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <img class="navbar-toggler-icon" src="./Recursos/iconoburger.png" alt="menuburger">
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-center">
                   <li class="nav-item">
                     <a class="nav-link active btn btn-celeste" aria-current="page" href="./pages/nos.html">Nosotros</a>
                   </li>
@@ -41,41 +42,74 @@
             </div>
           </nav>
     </header>
-    <main class="container">
-        <div class="row">
-        <div class="col-md-4 col-sm-2 col-xs-1">
-        <article >
-            <img class="index_main-imagenes index_main-img1" src="./Recursos/1.jpg" alt="paredblanca">
-            <img class="index_main-imagenes index_main-img2" src="./Recursos/2.jpg" alt="diseñointerior">
-         </article></div>
-        <div class="index_main-texto col-md-4 col-sm-2 col-xs-1">
-            <h3 class= "index_main-h3">Estudio Integral de</h3>
-            <h1 class="index_main-h1">Arquitectura y Diseño</h1>
+    <main>
+      <article class="index_dinamico">
+        <div class="absolute">
+          <h1 class="index_title">Somos Mambo•</h1>
+          <img class="index_isologo" src="./Recursos/isologosinfondo.png" alt="isologo">
+          <h3 class="index_main-h3">Estudio Integral de Arquitectura y Diseño</h3>
         </div>
-        <div class="col-md-4 col-sm-2 col-xs-1">
-        <article>
-            <img class="index_main-imagenes index_main-img3" src="./Recursos/3.jpg" alt="computadora en sala">
-            <img class="index_main-imagenes index_main-img4" src="./Recursos/4.jpg" alt="notas">
-         </article></div>
-        </div>
-    </div>
+          <video class="index_video" controls autoplay loop>
+            <source src="./Recursos/video_portada.mp4" type="video/mp4">
+          </video>
+        </article>
+        <section class="container">
+            <div class="p-4 p-md-5 mb-4 text-white rounded index-bkbordo">
+              <div class="col-md-6 px-0">
+                <h1 class="display-4">MAMBO• Un mix de arquitectura & diseño</h1>
+                <p class="lead my-3">Diseñamos nuestros proyectos pensando en las personas </p>
+                <p class="lead mb-0"><a href="./pages/nos.html" class="text-white fw-bold">Quienes somos...</a></p>
+              </div>
+            </div>
+          
+            <div class="row mb-2">
+              <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">Arquitectura</strong>
+                    <h3 class="mb-0">Arquitectos</h3>
+                    <div class="mb-1 text-muted">MMO + Arquitectura UNLAM</div>
+                    <p class="card-text mb-auto">Con base en estudios técnicos de contrucción y perfeccionandonos actualmente en la carrera de grado de la Universidad Nacional de La Matanza </p>
+                    <a href="./pages/arq.html" class="stretched-link">Sección Arquitectura</a>
+                  </div>
+                  <div class="col-auto d-none d-lg-block">
+                    <img class="bd-placeholder-img" width="200" height="250" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="./Recursos/libreta.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">Diseño</strong>
+                    <h3 class="mb-0">Diseñadora</h3>
+                    <div class="mb-1 text-muted">CoderHouse + Crehana</div>
+                    <p class="card-text mb-auto">Con carrera en Diseño y Desarrollo UX/UI en la plataforma Coderhouse y especializaciones en Branding autodidacta en Crehana.</p>
+                    <a href="./pages/dise.html" class="stretched-link">Sección Diseño</a>
+                  </div>
+                  <div class="col-auto d-none d-lg-block">
+                    <img class="bd-placeholder-img" width="200" height="250" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="./Recursos/compu.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer">
-        <div>
-         <p class="footer-firma"> Diseño & Desarrollo Bogado Leila</p>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">&copy; Diseño & Desarrollo Bogado Leila</span>
         </div>
-    <article class="social">
-         <section>
-               <a href="mailto: bogadoleilaanabel@gmail.com>"><img class="footer_social-logo" src="./Recursos/logo email.png" alt=" Enviar Mail"></a>
-           </section> 
-           <section>
-               <a href="https://www.instagram.com/leibogado.ar/"> <img class="footer_social-logo" src="./Recursos/logo instagram.png" alt="Ver instagram"></a>
-           </section> 
-           <section>
-            <a href=https://api.whatsapp.com/send?phone=5401123789005&text=Hola%20Leila!><img class="footer_social-logo" src="./Recursos/logo whatsapp.png" alt="Enviar Whatsapp"></a>
-        </section>     
-     </article>
-    </footer>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a href="mailto: bogadoleilaanabel@gmail.com>"><img class="footer_social-logo" src="./Recursos/logo email.png" alt=" Enviar Mail"></a></a></li>
+          <li class="ms-3"><a href="https://www.instagram.com/leibogado.ar/"> <img class="footer_social-logo" src="./Recursos/logo instagram.png" alt="Ver instagram"></a></li>
+          <li class="ms-3"><a href=https://api.whatsapp.com/send?phone=5401123789005&text=Hola%20Leila!><img class="footer_social-logo" src="./Recursos/logo whatsapp.png" alt="Enviar Whatsapp"></a></li>
+        </ul>
+      </footer>
+    </div>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
