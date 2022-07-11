@@ -43,61 +43,118 @@
           </nav>
     </header>
     <main class="contact_main">
-        <section class="contact_main-S1">
-            <div class="contact_main-textoarq">
-                <p>Servicios</p>
-                <p>Croquis Preliminares</p>
-                <p>Anteproyecto y Proyecto</p>
-                <p>Documentación de obra</p>
-                <p>Documentación Administrativa (planos municipales y para habilitaciones)</p>
-                <p>Diseño de interiores</p>
-                <p>Construcción Llave en mano</p>
-                <p>Dirección y control de obra</p>
-                <p>Asesoramiento en la ambientación.</p>
-                <p>Reformas</p>
-                <p>Re funcionalización de espacios</p>
-            </div>  
-        </section>
+      <article>
+        <div class="p-5 mb-4  rounded-3 descripcionppal-arq">
+          <div class="container-fluid py-5">
+            <h1 class="display-5">Trabajemos Juntos</h1>
+            <p class="col-md-8 fs-4">LLevemos tu proyecto e ideas adelante</p>
+          </div>
+        </div>
+
+        <div class="row align-items-md-stretch especificacion-arq">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h2>Servicios Arquitectura</h2>
+              <p>Croquis Preliminares</p>
+              <p>Anteproyecto y Proyecto</p>
+              <p>Documentación de obra</p>
+              <p>Documentación Administrativa (planos municipales y para habilitaciones)</p>
+              <p>Diseño de interiores</p>
+              <p>Construcción Llave en mano</p>
+              <p>Dirección y control de obra</p>
+              <p>Asesoramiento en la ambientación.</p>
+              <p>Reformas</p>
+              <p>Re funcionalización de espacios</p>
+            </div>
+          </div>
+          <div class="col-md-6 bg-img-arq">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h2>Servicios Diseño</h2>
+              <p>Manuales de MARCA:</p>
+              <p>Logos/Isotipos</p>
+              <p> Colores y Tipografía</p>
+              <p>Ilustraciones</p>
+              <p>Comunicación visual</p>
+              <p>Proyectos de Identidad Visual</p>
+              <p>Armado de Wireframes para APPS y Páginas WEB</p>
+              <p>Prototipado Interactivo</p>
+              <p> Publicaciones para redes sociales</p>
+              <p>Aplicación de Design Thinking</p>
+            </div>
+          </div>
+        </div>
+         
+        <article class="acordeon_dise">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Servicios
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">                
+                    <p>Manuales de MARCA:</p>
+                    <p>>Logos/Isotipos</p>
+                    <p> Colores y Tipografía</p>
+                    <p>Ilustraciones</p>
+                    <p>Comunicación visual</p>
+                    <p>Proyectos de Identidad Visual</p>
+                    <p>Armado de Wireframes para APPS y Páginas WEB</p>
+                    <p>Prototipado Interactivo</p>
+                    <p> Publicaciones para redes sociales</p>
+                    <p>Aplicación de Design Thinking</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Especialidad
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    <strong>No dudes en contactarte!</strong> Si tenés un proyecto en mente en mente y no saber como encararlo o queres mejorar la visual de tu marca. 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>  
         <article class="contenedor-formulario">
-            <h1>Trabajemos Juntos</h1>
-            <form class="formulario">
-                <fieldset>
-                    <legend>Ingresa tus datos de Contacto</legend>
-                    <div>
-                        <label for="nombre">Nombre</label>
-                        <input class="rellenar" ctype="text" id="nombre" required placeholder="Ingresá tu nombre completo">
-                    </div>
-                    <div>
-                        <label for="e-mail">E-mail</label>
-                        <input class="rellenar"type="email" id="Escribe tu e-mail" required placeholder="Ingresá tu email">    
-                    </div>
-                    <div>
-                        <label for="telefono">Telefono</label>
-                        <input class="rellenar" type="tel" id="Escribe tu telefono" required placeholder="Ingresá tu teléfono">
-                    </div>
-                    <div>
-                        <label for="nota">Nota</label>
-                        <input class="rellenar" type="nota" id="Deja tu consulta" required placeholder="Ingresá tu consulta" >
-                    </div>
-                    <button class="enviar_contact">Enviar</button>
-                </fieldset>    
-            </form>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="rellenar" ctype="text" class="form-control" id="nombre" required placeholder="Ingresá tu nombre completo">
+            </div>
+            <div class="col-md-6">
+              <label for="e-mail" class="form-label">E-mail</label>
+              <input type="rellenar "type="email" class="form-control" id="Escribe tu e-mail" required placeholder="Ingresá tu email">
+            </div>
+            <div class="col-md-6">
+              <label for="telefono" class="form-label">Telefono</label>
+              <input type="rellenar" class="form-control" type="tel" id="Escribe tu telefono" required placeholder="Ingresá tu teléfono">
+            </div>
+            <div class="col-md-2">
+              <label for="caracteristica" class="form-label">Caracteristica</label>
+              <input type="text" class="form-control" id="caracteristica">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Servicio</label>
+              <select id="inputState" class="form-select">
+                <option selected>Arquitectura</option>
+                <option>Diseño</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="nota" class="form-label">Nota</label>
+              <input type="rellenar" class="form-control" type="nota" id="Deja tu consulta" required placeholder="Ingresá tu consulta">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" >Enviar</button>
+            </div>
+          </form>
         </article>
-        <section class="contact_main-S2">
-            <div class="contact_main-textodise">
-                <p>Servicios</p>
-                <p>Croquis Preliminares</p>
-                <p>Anteproyecto y Proyecto</p>
-                <p>Documentación de obra</p>
-                <p>Documentación Administrativa (planos municipales y para habilitaciones)</p>
-                <p>Diseño de interiores</p>
-                <p>Construcción Llave en mano</p>
-                <p>Dirección y control de obra</p>
-                <p>Asesoramiento en la ambientación.</p>
-                <p>Reformas</p>
-                <p>Re funcionalización de espacios</p>
-            </div>  
-        </section>
     </main>
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

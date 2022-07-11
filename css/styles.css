@@ -774,24 +774,10 @@ a:hover{
 /*Diseño/*/
 .dise-body{
     background: linear-gradient(to bottom, #797979, white);
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-top: 0%;
-    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
-.dise_main{
-    display: flex;
-    flex-direction: row;
-}
-.dise-tamañodeimagen{
-    width: 20rem;
-    margin: 1rem;
-}
-.dise_main-trabajos{
-    display: flex;
-    flex-direction: row;
 
-}
 .dise-manuales{
     font-family: 'Red Hat Display', sans-serif; 
     text-decoration: none;
@@ -844,31 +830,11 @@ a:hover{
     color: #FFFFFF;
     width: 20rem;
 }
-.dise_main-textoservicio{
-    font-weight: normal;
-    color: #FFFFFF;
-    background-color: #AC7878;
-    border-radius: 2rem;
-    width: 20rem;
-    padding: 3rem;
-    font-size: large;
-}
-.dise_main-textodestacado{
-    font-weight: normal;
-    color: #78ACAC;
-    width: 20rem;
-    font-size: large;
-    background-color: #FFFFFF80;
-    border-radius: 2rem;
-    padding: 3rem;
-    margin-top: 3rem;
-}
-.logobehance{
-    width: 4rem;
-}
+
 .dise_main-btnverproyectos{
     text-decoration: none;
     text-align: center;
+    margin: 1rem;
     border-radius: 1rem;
     padding : 1rem 1rem;
     white-space: 15rem;
@@ -882,6 +848,72 @@ a:hover{
  .dise_main-ingresobehance{
     display: inline
  }
+ /*DISEÑO Grid galeria/*/
+ .galeria-grid-dise{
+    margin-top: 2rem;
+ }
+ .grid-gallery {
+    display: grid;
+    grid-auto-rows: 200px;
+    gap: 1rem;
+    grid-auto-flow: row dense;
+  }
+  .grid-gallery__image{
+    border-radius: 0.5rem;
+  }
+  
+  @media all and (min-width: 320px) {
+    .grid-gallery {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media all and (min-width: 768px) {
+    .grid-gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media all and (min-width: 992px) {
+    .grid-gallery {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
+  .grid-gallery__item:nth-child(11n+1) {
+    grid-column: span 1;
+  }
+  
+  .grid-gallery__item:nth-child(11n+4) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  
+  .grid-gallery__item:nth-child(11n+6) {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+  
+  .grid-gallery__item:nth-child(11n+7) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  
+  .grid-gallery__item:nth-child(11n+8) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .grid-gallery__item:nth-child(11n+9) {
+    grid-row: span 3;
+  }
+  
+  .grid-gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
  /*DISEÑO en Tablet pages/*/
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     .dise_main-trabajos{
@@ -918,56 +950,50 @@ a:hover{
 }
 }
 /*DISEÑO Mobile/*/
-@media only screen and (max-width: 768px){
-    .dise_main{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-    .dise_main-trabajos{
-        display: flex;
-        flex-direction: column;
-    }
-.dise_main_article-textos{
+/*Arquitectura/*/
+.dise-body{
+    background: linear-gradient(to bottom, #797979, white);
+}
+/*/intro/*/
+.dise_main{
     font-family: 'Red Hat Display', sans-serif; 
     text-decoration: none;
-}
-.dise_main-textoppal{
-    font-weight: normal;
-    font-size: 2rem;
+    font-weight: lighter;
     color: #FFFFFF;
-    font-size: larger;
 }
-.dise_main-textoservicio{
-    font-weight: normal;
-    color: #FFFFFF;
-    background-color: #AC7878;
-    border-radius: 2rem;
-    width: 20rem;
-    padding: 3rem;
-    font-size: medium;
+.fs-4{
+    font-family: 'Red Hat Display', sans-serif; 
+    text-decoration: none;
+    font-weight: lighter;
 }
-.dise_main-textodestacado{
-    font-weight: normal;
-    color: #ffffff;
-    font-size: large;
-    background-color: #FFFFFF80;
-    border-radius: 2rem;
-    padding: 2rem;
-    margin-top: 2rem;
+.bg-dark{
+    background: linear-gradient(to bottom right, #AC7878, #78ACAC)!important;
 }
-.dise-tamañodeimagen{
-    width: 15rem;
-    margin: 1rem;
-    border-radius: 1rem;
+.descripcionppal-dise{
+    margin: 0%;
+    padding: 1rem;
+
 }
+/*/cambios entre dispositivos/*/
+/*/desktop/*/
+@media only screen and (min-width: 992px){
+    .acordeon_dise{
+        display: none;
+    }
 }
+/*/visibilidad de portada mobile y tablet/*/
+@media only screen and (max-width: 768px){
+    .especificacion-arq{
+        display: none;
+    }
+}
+
  /*Contacto/*/
 .contact-body{
     font-family: 'Red Hat Display', sans-serif; 
     background: linear-gradient(to bottom, #AC7878, white);
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 0%;
     padding-bottom: 1rem;
     color: #FFFFFF;
@@ -987,6 +1013,12 @@ a:hover{
     padding: 3rem;
     font-size: large;
     margin: 2rem;
+}
+.contenedor-formulario{
+    background-color: #AC7878;
+    margin-top: 1rem;
+    padding: 0.5rem;
+
 }
 .formulario{
     background-color: #FFFFFF;
