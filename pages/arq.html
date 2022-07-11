@@ -13,43 +13,75 @@
     <title>mambo</title>
 </head>
 <body class="arq-body">
-    <header>
-        <section class="header_pages-encabezado">
-            <img class="pages-isologo-encabezado" src="../Recursos/isologosinfondo.png" alt="isologosinfondo">
-            <h1 class="pages-h1-encabezado">Arquitectura</h1>
-        </section>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <img class="navbar-toggler-icon" src="../Recursos/iconoburger.png" alt="menuburger">
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link active btn btn-celeste" aria-current="page" href="../pages/nos.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active btn btn-bordo" aria-current="page" href="../pages/arq.html">Arquitectura</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="header_a-logo-blanco" aria-current="page" href="../index.html"><img class="header-logo-blanco" src="../Recursos/Recurso 22.png" alt="Logo"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active btn btn-celeste" aria-current="page" href="../pages/dise.html">Diseño</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active btn btn-celeste" aria-current="page" href="../pages/cont.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img class="pages-isologo-encabezado" src="../Recursos/isologosinfondo.png" alt="isologosinfondo">Arquitectura</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="navbar-toggler-icon" src="../Recursos/iconoburger.png" alt="menuburger">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-center">
+              <li class="nav-item">
+                <a class="nav-link active btn btn-gris" aria-current="page" href="../pages/nos.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active btn btn-gris" aria-current="page" href="../pages/arq.html">Arquitectura</a>
+              </li>
+              <li class="nav-item">
+                <a class="header_a-logo-blanco" aria-current="page" href="../index.html"><img class="header-logo-blanco" src="../Recursos/Recurso 22.png" alt="Logo"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active btn btn-gris" aria-current="page" href="../pages/dise.html">Diseño</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active btn btn-gris" aria-current="page" href="../pages/cont.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
     <main class="arq_main container">
+      <article>
+        <div class="p-5 mb-4  rounded-3">
+          <div class="container-fluid py-5">
+            <h1 class="display-5">Nos capacitamos contantemente</h1>
+            <p class="col-md-8 fs-4">Esto nos permite proyectar con alta calidad en la resolución espacial y estar atentos a los detalles.
+              Abordamos todas las fases de una obra de arquitectura, Anteproyecto, Proyecto, Dirección, Administración y Construcción.</p>
+          </div>
+        </div>
+
+        <div class="row align-items-md-stretch especificacion-arq">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h2>Servicios</h2>
+              <p>Croquis Preliminares</p>
+              <p>Anteproyecto y Proyecto</p>
+              <p>Documentación de obra</p>
+              <p>Documentación Administrativa (planos municipales y para habilitaciones)</p>
+              <p>Diseño de interiores</p>
+              <p>Construcción Llave en mano</p>
+              <p>Dirección y control de obra</p>
+              <p>Asesoramiento en la ambientación.</p>
+              <p>Reformas</p>
+              <p>Re funcionalización de espacios</p>
+            </div>
+          </div>
+          <div class="col-md-6 bg-img-arq">
+            <div class="h-100 p-5  border rounded-3">
+              <h2>Terceriza tu Proyecto</h2>
+              <p>Trabajamos en entrega de planos 2D y 3D para estudios de Arquitectura y profesionales.
+                Ya sea para trabajos propios, presentaciones municipales y/o visualización en redes sociales.</p>
+            </div>
+          </div>
+        </div>
+      </article>
         <article class="arq_main-article-trabajos row">
             <section class="col-md-4 col-sm-2 col-xs-1">
-                <h3>Interiorismo</h3>
-                <div class="card" style="width: 18rem;">
+                <h3 class="arq-title">Interiorismo</h3>
+                <div class="card card-tras" style="width: 18rem;">
                     <video class="videoarq " src="../Recursos/GIF DL.mp4" controls autoplay preload alt="Remodelacion DL"></video>
                     <div class="card-body">
                       <p class="card-text">Representación Visual animada para @mg.arquitectas</p>
@@ -63,7 +95,7 @@
                   </div>
             </section>
             <section class="col-md-4 col-sm-2 col-xs-1">
-                <h3>Urbanismo</h3>
+                <h3 class="arq-title" >Urbanismo</h3>
             <div class="card" style="width: 18rem;">
                 <img src="../Recursos/ambiente keen.jpg" class="card-img-top" alt="Lujan">
                 <div class="card-body">
@@ -81,7 +113,7 @@
               </div>
             </section>
             <section class="col-md-4 col-sm-2 col-xs-1">
-                <h3>Proyecto</h3>
+                <h3 class="arq-title" >Proyecto</h3>
             <div class="card" style="width: 18rem;">
                 <img src="../Recursos/imagenconceptual.jpg" class="card-img-top" alt="">
                 <div class="card-body">
@@ -99,6 +131,7 @@
               </div>
             </section>
         </article>
+        <article class="acordeon_arq">
         <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -148,23 +181,24 @@
               </div>
             </div>
           </div>
+        </article>  
     </main>
-    <footer class="footer">
-        <div>
-         <p class="footer-firma"> Diseño & Desarrollo Bogado Leila</p>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">&copy; Diseño & Desarrollo Bogado Leila</span>
         </div>
-    <article class="social">
-         <section>
-               <a href="mailto: bogadoleilaanabel@gmail.com>"><img class="footer_social-logo" src="../Recursos/logo email.png" alt=" Enviar Mail"></a>
-           </section> 
-           <section>
-               <a href="https://www.instagram.com/leibogado.ar/"> <img class="footer_social-logo" src="../Recursos/logo instagram.png" alt="Ver instagram"></a>
-           </section> 
-           <section>
-            <a href=https://api.whatsapp.com/send?phone=5401123789005&text=Hola%20Leila!><img class="footer_social-logo" src="../Recursos/logo whatsapp.png" alt="Enviar Whatsapp"></a>
-        </section>     
-     </article>
-    </footer>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a href="mailto: bogadoleilaanabel@gmail.com>"><img class="footer_social-logo" src="../Recursos/logo email.png" alt=" Enviar Mail"></a></a></li>
+          <li class="ms-3"><a href="https://www.instagram.com/leibogado.ar/"> <img class="footer_social-logo" src="../Recursos/logo instagram.png" alt="Ver instagram"></a></li>
+          <li class="ms-3"><a href=https://api.whatsapp.com/send?phone=5401123789005&text=Hola%20Leila!><img class="footer_social-logo" src="../Recursos/logo whatsapp.png" alt="Enviar Whatsapp"></a></li>
+        </ul>
+      </footer>
+    </div>
 <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
