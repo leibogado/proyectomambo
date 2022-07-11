@@ -610,11 +610,15 @@ a:hover{
     }
 
 /*Arquitectura/*/
-/*/TRABAJANDO CON BOOTSTRAP/*/
+.arq-body{
+    background: linear-gradient(to bottom, #797979, white);
+}
+/*/intro/*/
 .arq_main{
     font-family: 'Red Hat Display', sans-serif; 
     text-decoration: none;
     font-weight: lighter;
+    color: #FFFFFF;
 }
 .fs-4{
     font-family: 'Red Hat Display', sans-serif; 
@@ -624,42 +628,119 @@ a:hover{
 .bg-dark{
     background: linear-gradient(to bottom right, #AC7878, #78ACAC)!important;
 }
+.descripcionppal-arq{
+    margin: 0%;
+    padding: 1rem;
 
-
+}
+/*/cambios entre dispositivos/*/
+/*/desktop/*/
 @media only screen and (min-width: 992px){
     .acordeon_arq{
         display: none;
     }
+    .arq_main-article-trabajos {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 16px 16px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "columna_cards_arq1 columna_cards_arq2 columna_cards_arq3";
+      }
+      
+      .columna_cards_arq1 { grid-area: columna_cards_arq1; }
+      
+      .columna_cards_arq2 { grid-area: columna_cards_arq2; }
+      
+      .columna_cards_arq3 { grid-area: columna_cards_arq3; }
+    }
+/*grid en Tablet/*/
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .columna_cards_arq1 { display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 16px 16px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "card1 card2"
+          "card3 card4";
+      }
+      
+      .card1 { grid-area: card1; }
+      
+      .card2 { grid-area: card2; }
+      
+      .card3 { grid-area: card3; }
+      
+      .card4 { grid-area: card4; } 
+
+    .columna_cards_arq2 { display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 16px 16px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "card5 card6"
+          "card7 card8";
+      }
+      
+      .card5 { grid-area: card5; }
+      
+      .card6 { grid-area: card6; }
+      
+      .card7 { grid-area: card7; }
+      
+      .card8 { grid-area: card8; } 
+
+      .columna_cards_arq3{ display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 16px 16px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "card9 card10"
+          "card11 card12";
+      }
+      
+      .card9 { grid-area: card9; }
+      
+      .card10 { grid-area: card10; }
+      
+      .card11 { grid-area: card11; }
+      
+      .card12 { grid-area: card12; } 
+
 }
+/*/visibilidad de portada mobile y tablet/*/
 @media only screen and (max-width: 768px){
 .especificacion-arq{
     display: none;
 }
 }
-.arq-title{
-    padding: 0.5rem;
-
-}
-
-.p_img-arq{
- color: #AC7878;
- background-color: #FFFFFF;
- border-radius: 00.5rem;
-}
-.h5_img-arq{
-text-shadow: 2px 2px 2px #797979;
-font-weight: bold;
-}
+/*/ajustes de cards/*/
 .card-text{
     font-family: 'Red Hat Display', sans-serif; 
     text-decoration: none;
     color: #797979;
 }
-
-.arq-body{
-    background: linear-gradient(to bottom, #797979, white);
-    padding-top: 0%;
-    padding-bottom: 1rem;
+.card{
+    margin: 1rem;
+}
+.arq-imgtex1{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.columna_cards_arq{
+    margin: 1rem;
+}
+.arq_main-img1{
+    position: relative;
+    overflow: hidden;
+    width: 15rem;
+}
+.arq_main-img1:hover{
+    opacity: 50%;
 }
 .card-title{
     font-family: 'Red Hat Display', sans-serif; 
@@ -667,6 +748,7 @@ font-weight: bold;
     color: #78ACAC;
     font-weight: bold;
 }
+/*/desplegable/*/
 .accordion-button{
     background-color: #AC7878;
     font-family: 'Red Hat Display', sans-serif; 
@@ -689,19 +771,6 @@ font-weight: bold;
     background-color: #AC7878;
     border-color: #FFFFFF;
 }
-.arq_main-img{
-    width: 18rem;}
-    .carousel-inner {
-   width: 18rem;
-}
-
-.arq_main{
-    font-family: 'Red Hat Display', sans-serif; 
-    text-decoration: none;
-    font-weight: bold;
-    color: #FFFFFF;
-}
-
 /*Diseño/*/
 .dise-body{
     background: linear-gradient(to bottom, #797979, white);
