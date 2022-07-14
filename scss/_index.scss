@@ -1,0 +1,112 @@
+/*Index/*/
+.index-body{
+    background: linear-gradient(to bottom, $colorPrincipal, $colorSecundario-a);
+    padding-top: 0%;
+    padding-bottom: 1rem;
+    margin: 1rem;
+}
+/*video autoplay en index/*/
+.index_dinamico{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.index_video{
+    width: 100%;
+    border-radius: 1rem;
+}
+.absolute{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+/*main en Desktop/*/
+@mixin index_font {
+    color:$colorSecundario-a;
+    font-family: $generalfont; 
+    align-items: center;
+    margin: 1rem;
+}
+
+$isologo-h: 10rem;
+
+@media only screen and (min-width: 992px){
+    .index_title{
+        @include index_font();
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+    .index_main-h3{
+        @include index_font();
+        font-weight: lighter;
+        font-size: xx-large;
+    }
+    .index_isologo{
+        height: $isologo-h;
+    }
+}
+/*main en Tablet/*/
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .index_title{
+        @include index_font();
+        font-weight: bolder;
+        font-size: x-large;
+    }
+    .index_main-h3{
+        @include index_font();
+        font-weight: lighter;
+        font-size: x-large;
+    }
+    .index_isologo{
+        height: $isologo-h/2
+    }
+}
+/*main en Mobile/*/
+@media only screen and (max-width: 768px){
+    .index_title{
+        @include index_font();
+        font-weight: bolder;
+        font-size: medium;
+    }
+    .index_main-h3{
+        @include index_font();
+        font-weight: lighter;
+        font-size: medium;
+    }
+    .index_isologo{
+        height: $isologo-h/3
+    }
+    .italic-sub{
+        font-weight: bold;
+    }
+}
+/*Cards personzalizadas/*/
+.text-primary{
+    color: $colorSecundario-c!important;
+
+}
+.index-bkbordo{
+    background: linear-gradient(to bottom right, $colorSecundario-b, $colorPrincipal);
+    margin: 0.5rem;
+
+}
+.stretched-link{
+    color: $colorSecundario-a;
+    padding: 0.5rem;
+    background-color: $colorPrincipal;
+    border-radius: 1rem;
+    &hover{
+        color: $colorSecundario-a;
+        background-color: $colorSecundario-b;
+    }
+}
+.bd-placeholder-img{
+    border-radius: 0.5rem;
+}
