@@ -222,7 +222,7 @@
     transform: translatex(-50%); } }
 
 /*menu en Tablet/*/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .pages-isologo-encabezado {
     height: 8rem;
     width: auto;
