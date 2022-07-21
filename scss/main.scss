@@ -50,11 +50,17 @@ $botonfont: 'Red Hat Display', sans-serif, bold;
     color: $colorSecundario-a;
     background-color: $colorSecundario-c; 
 } 
+/*MAPS-GET/*/
+$estilos: (
+centro: center,
+justcont: space-around,
+dis : flex
+);
 
 /*menu general/*/
 .navbar-nav{
-    display: flex;
-    justify-content: space-around;
+    display: map-get($estilos, dis);
+    justify-content: map-get($estilos, justcont);
     margin-left: 0px;
 
 }
@@ -68,15 +74,15 @@ $botonfont: 'Red Hat Display', sans-serif, bold;
     font-style: normal;
 }
 .navbar{
-    display: flex;
-    justify-content: space-around;
+    display: map-get($estilos, dis);
+    justify-content: map-get($estilos, justcont);
     align-items: center;
 }
 .container-fluid{
-    justify-content: center;
+    justify-content: map-get($estilos, justcont);
 }
 .navbar-collapse{
-    display: flex;
+    display: map-get($estilos, dis);
     text-align: left;
 }
 .navbar-brand{
@@ -141,3 +147,4 @@ $botonfont: 'Red Hat Display', sans-serif, bold;
     width: 5rem;
     padding: 1.5rem;
 }
+
