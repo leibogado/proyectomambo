@@ -5,7 +5,11 @@ $colorSecundario-b: #AC7878;
 $colorSecundario-c: #797979;
 /*Variables de Fuente*/
 $generalfont: 'Red Hat Display', sans-serif;
-$botonfont: 'Red Hat Display', sans-serif, bold; 
+/*Extend de Fuente para botones*/
+%botonfont {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold
+}
 
 @import "index";
 @import "nos";
@@ -14,7 +18,7 @@ $botonfont: 'Red Hat Display', sans-serif, bold;
 @import "cont";
 
 /*botones del menu/*/
-
+/*utilizo mixin*/
 @mixin btnstyle{
     text-decoration: none;
     border-radius: 1rem;
@@ -23,7 +27,7 @@ $botonfont: 'Red Hat Display', sans-serif, bold;
     white-space: 15rem;
     text-decoration: none;
     list-style-type: none;
-    font-family: $botonfont;
+    @extend %botonfont;
     box-shadow: 0 0.05rem 0.5rem rgba(0, 0, 0, 0.1); 
     &:hover{
     color: $colorSecundario-b;
@@ -50,7 +54,7 @@ $botonfont: 'Red Hat Display', sans-serif, bold;
     color: $colorSecundario-a;
     background-color: $colorSecundario-c; 
 } 
-/*MAPS-GET/*/
+/*utilizo maps-get*/
 $estilos: (
 centro: center,
 justcont: space-around,
