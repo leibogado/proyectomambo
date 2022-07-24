@@ -1,5 +1,10 @@
 /*Variables de Color*/
 /*Variables de Fuente*/
+/*Extend de Fuente para botones*/
+.btn-celeste, .btn-blanco, .btn-bordo, .btn-gris {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: bold; }
+
 /*Index/*/
 .index-body {
   background: linear-gradient(to bottom, #78ACAC, #FFFFFF);
@@ -109,6 +114,7 @@
   border-radius: 0.5rem; }
 
 /*botones del menu/*/
+/*utilizo mixin*/
 .btn-celeste {
   text-decoration: none;
   border-radius: 1rem;
@@ -117,7 +123,6 @@
   white-space: 15rem;
   text-decoration: none;
   list-style-type: none;
-  font-family: "Red Hat Display", sans-serif, bold;
   box-shadow: 0 0.05rem 0.5rem rgba(0, 0, 0, 0.1);
   color: #FFFFFF;
   background-color: #78ACAC; }
@@ -133,7 +138,6 @@
   white-space: 15rem;
   text-decoration: none;
   list-style-type: none;
-  font-family: "Red Hat Display", sans-serif, bold;
   box-shadow: 0 0.05rem 0.5rem rgba(0, 0, 0, 0.1);
   color: #78ACAC;
   background-color: #FFFFFF; }
@@ -149,7 +153,6 @@
   white-space: 15rem;
   text-decoration: none;
   list-style-type: none;
-  font-family: "Red Hat Display", sans-serif, bold;
   box-shadow: 0 0.05rem 0.5rem rgba(0, 0, 0, 0.1);
   color: #FFFFFF;
   background-color: #AC7878; }
@@ -165,7 +168,6 @@
   white-space: 15rem;
   text-decoration: none;
   list-style-type: none;
-  font-family: "Red Hat Display", sans-serif, bold;
   box-shadow: 0 0.05rem 0.5rem rgba(0, 0, 0, 0.1);
   color: #FFFFFF;
   background-color: #797979; }
@@ -173,6 +175,7 @@
     color: #AC7878;
     background-color: #FFFFFF; }
 
+/*utilizo maps-get*/
 /*menu general/*/
 .navbar-nav {
   display: flex;
@@ -194,7 +197,7 @@
   align-items: center; }
 
 .container-fluid {
-  justify-content: center; }
+  justify-content: space-around; }
 
 .navbar-collapse {
   display: flex;
