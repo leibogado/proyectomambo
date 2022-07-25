@@ -5,7 +5,27 @@ $colorSecundario-b: #AC7878;
 $colorSecundario-c: #797979;
 
 /*Variables de Fuente*/
-$generalfont: 'Red Hat Display', sans-serif;
+$generalfont: 'Red Hat Display', sans-serif; 
+
+@mixin linkfont {
+    text-decoration: none;
+    color:$colorSecundario-a;
+    list-style-type: none;
+    padding: 1rem;
+    background: linear-gradient(to bottom right, $colorSecundario-b, $colorPrincipal);
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    &:hover{
+    color: $colorSecundario-c;
+    text-decoration: underline;
+    background: linear-gradient(to bottom right, $colorSecundario-a, $colorPrincipal);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+}
+.links{
+    @include linkfont();
+}
 /*Extend de Fuente para botones*/
 %botonfont {
     font-family: 'Red Hat Display', sans-serif;
@@ -25,7 +45,6 @@ $generalfont: 'Red Hat Display', sans-serif;
     padding : 1rem 5rem;
     margin: 1rem;
     white-space: 15rem;
-    text-decoration: none;
     list-style-type: none;
     @extend %botonfont;
     box-shadow: 0 0.05rem 0.5rem rgba(0, 0, 0, 0.1); 
@@ -133,35 +152,35 @@ dis : flex
 }
 /*FOOTER GENERAL/*/
 .text-muted{
-    font-family:'Red Hat Display';
-    color: $colorSecundario-b!important;
-    font-weight: lighter;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 0%;
+font-family:'Red Hat Display';
+color: $colorSecundario-b!important;
+font-weight: lighter;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 0%;
 }
 .social{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: 0%;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+margin: 0%;
 }
 .footer_social-logo{
-    width: 5rem;
-    padding: 1.5rem;
+width: 5rem;
+padding: 1.5rem;
 }
 /*/desplegable/*/
 .accordion-button{
-    background-color: #AC7878;
-    font-family: 'Red Hat Display', sans-serif; 
-    text-decoration: none;
-    font-weight: bold;
-    color: #FFFFFF;
+background-color: #AC7878;
+font-family: 'Red Hat Display', sans-serif; 
+text-decoration: none;
+font-weight: bold;
+color: #FFFFFF;
 }
 .accordion-button:not(.collapsed) {
-    background-color: #ffffff;
-    color: #78ACAC;
+background-color: #ffffff;
+color: #78ACAC;
 }
 .collapse{
     color: #797979;
@@ -171,6 +190,6 @@ background-color: #78ACAC;
 border-color: #797979;
 }
 .btn-primary:hover{
-    background-color: #AC7878;
-    border-color: #FFFFFF;
+background-color: #AC7878;
+border-color: #FFFFFF;
 }

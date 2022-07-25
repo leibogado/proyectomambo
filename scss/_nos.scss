@@ -4,6 +4,8 @@
     padding-top: 0%;
     padding-bottom: 1rem;
     margin: 1rem;
+    color:$colorSecundario-a;
+    font-family: $generalfont;
 }
 /*main nos en Desktop/*/
 @media only screen and (min-width: 1020px){
@@ -21,9 +23,8 @@
 .cvs{
     border-radius: 10%;
     background: linear-gradient(to bottom right, $colorSecundario-b, $colorPrincipal);
-}
-.cvs{
-    font-family: $generalfont; 
+    font-family: $generalfont;
+    color: $colorSecundario-a; 
     text-decoration: none;
     list-style-type: none;
     display: flex;
@@ -42,40 +43,16 @@
     align-items: center;
 }
 .cvs-h2{
-    color: #FFFFFF;
     font-weight: bold;
 }
 .cvs-h3{
-    color: #FFFFFF;
     font-weight: normal;
 }
 .cvs-p{
-    color: #FFFFFF;
     padding-bottom: 1rem;
 }
-.boton-cvs-a{
-    text-decoration: none;
-    text-align: center;
-    border-radius: 1rem;
-    padding : 1rem 1rem;
-    white-space: 15rem;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: 'Red Hat Display', sans-serif; 
-    font-weight: bold;
-    color: #FFFFFF;
-    background-color: #797979;
-    justify-content: center;
-}
-.boton-cvs-a:hover{
-    color:#FFFFFF;
-}
+
 .nos_fondolineal-acercade{
-    font-family: $generalfont; 
-    text-decoration: none;
-    color: #FFFFFF;
-    text-align:left;
-    list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-items: end;
@@ -125,35 +102,20 @@
         align-items: center;
     }
     .cvs-h2{
-    color: #FFFFFF;
+
     font-weight: bold;
     }
     .cvs-h3{
-        color: #FFFFFF;
+
         font-weight: normal;
     }
     .cvs-p{
-        color: #FFFFFF;
+
         padding-bottom: 1rem;
-    }
-    .boton-cvs-a{
-        text-decoration: none;
-        text-align: center;
-        border-radius: 1rem;
-        padding : 1rem 1rem;
-        white-space: 15rem;
-        text-decoration: none;
-        list-style-type: none;
-        font-family: 'Red Hat Display', sans-serif; 
-        font-weight: bold;
-        color: #78ACAC;
-        background-color: #797979;
-        justify-content: center;
     }
     .nos_fondolineal-acercade{
         font-family: 'Red Hat Display', sans-serif; 
         text-decoration: none;
-        color: #FFFFFF;
         text-align:left;
         list-style-type: none;
         display: flex;
@@ -161,9 +123,6 @@
         justify-items: end;
         font-size: medium;
         border-radius: 2rem; 
-    }
-    .boton-cvs-a:hover{
-        color:#FFFFFF;
     }
     .nos-acercade{
         width: 20rem;
@@ -205,31 +164,14 @@
 
     }
     .cvs-h2{
-    color: #FFFFFF;
     font-weight: bold;
     }
     .cvs-h3{
-        color: #FFFFFF;
         font-weight: normal;
     }
     .cvs-p{
-        color: #FFFFFF;
         padding-bottom: 1rem;
         display: none
-    }
-    .boton-cvs-a{
-        text-decoration: none;
-        text-align: center;
-        border-radius: 1rem;
-        padding : 1rem 1rem;
-        white-space: 15rem;
-        text-decoration: none;
-        list-style-type: none;
-        font-family: 'Red Hat Display', sans-serif; 
-        font-weight: bold;
-        color: #78ACAC;
-        background-color: #797979;
-        justify-content: center;
     }
     .nos_fondolineal-acercade{
         font-family: 'Red Hat Display', sans-serif; 
@@ -249,8 +191,5 @@
         padding-right: 1.5rem;
         font-size:medium;
         font-weight: normal;
-    }
-    .boton-cvs-a:hover{
-        color:#FFFFFF;
     }
 }

@@ -1,80 +1,10 @@
 /*Diseño/*/
 .dise-body{
-background: linear-gradient(to bottom, #797979, white);
+background: linear-gradient(to bottom, $colorSecundario-c, white);
 padding-left: 1rem;
 padding-right: 1rem;
 }
 
-.dise-manuales{
-font-family: 'Red Hat Display', sans-serif; 
-text-decoration: none;
-font-weight: bold;
-text-align: center;
-font-size:large;
-color: #FFFFFF;
-display:flex;
-flex-direction: column;
-background-color: #79797980;
-border-radius: 2rem;
-padding: 2rem;
-margin: 1rem;
-}
-.dise-visual{
-font-family: 'Red Hat Display', sans-serif; 
-text-decoration: none;
-font-weight: bold;
-text-align: center;
-font-size:large;
-color: #FFFFFF;
-display:flex;
-flex-direction: column;
-background-color: #79797980;
-border-radius: 2rem;
-padding: 2rem;
-margin: 1rem;
-}
-.dise-diseñouxui{
-font-family: 'Red Hat Display', sans-serif; 
-text-decoration: none;
-font-weight: bold; 
-text-align: center;
-font-size:large;
-color: #FFFFFF;
-display:flex;
-flex-direction: column;
-background-color: #79797980;
-border-radius: 2rem;
-padding: 2rem;
-margin: 1rem;
-}
-.dise_main_article-textos{
-font-family: 'Red Hat Display', sans-serif; 
-text-decoration: none;
-}
-.dise_main-textoppal{
-font-weight: normal;
-font-size: 2rem;
-color: #FFFFFF;
-width: 20rem;
-}
-
-.dise_main-btnverproyectos{
-text-decoration: none;
-text-align: center;
-margin: 1rem;
-border-radius: 1rem;
-padding : 1rem 1rem;
-white-space: 15rem;
-text-decoration: none;
-list-style-type: none;
-font-family: 'Red Hat Display', sans-serif; 
-font-weight: bold;
-color: #78ACAC;
-background-color: #797979;
-}
-.dise_main-ingresobehance{
-    display: inline
-}
 /*DISEÑO Grid galeria/*/
 .galeria-grid-dise{
     margin-top: 2rem;
@@ -140,46 +70,6 @@ background-color: #797979;
     object-fit: cover;
 }
 
-/*DISEÑO en Tablet pages/*/
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    .dise_main-trabajos{
-        display: flex;
-        flex-direction: column;
-    }
-.dise_main_article-textos{
-    font-family: 'Red Hat Display', sans-serif; 
-    text-decoration: none;
-}
-.dise_main-textoppal{
-    font-weight: normal;
-    font-size: 2rem;
-    color: #FFFFFF;
-    font-size: larger;
-}
-.dise_main-textoservicio{
-    font-weight: normal;
-    color: #FFFFFF;
-    background-color: #AC7878;
-    border-radius: 2rem;
-    width: 20rem;
-    padding: 3rem;
-    font-size: medium;
-}
-.dise_main-textodestacado{
-    font-weight: normal;
-    color: #78ACAC;
-    font-size: large;
-    background-color: #FFFFFF80;
-    border-radius: 2rem;
-    padding: 2rem;
-    margin-top: 2rem;
-}
-}
-/*DISEÑO Mobile/*/
-/*Arquitectura/*/
-.dise-body{
-    background: linear-gradient(to bottom, #797979, white);
-}
 /*/intro/*/
 .dise_main{
     font-family: 'Red Hat Display', sans-serif; 
