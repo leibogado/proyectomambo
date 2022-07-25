@@ -3,12 +3,12 @@ $colorPrincipal: #78ACAC;
 $colorSecundario-a: #FFFFFF;
 $colorSecundario-b: #AC7878;
 $colorSecundario-c: #797979;
+
 /*Variables de Fuente*/
 $generalfont: 'Red Hat Display', sans-serif;
 /*Extend de Fuente para botones*/
 %botonfont {
     font-family: 'Red Hat Display', sans-serif;
-    font-weight: bold
 }
 
 @import "index";
@@ -151,4 +151,26 @@ dis : flex
     width: 5rem;
     padding: 1.5rem;
 }
-
+/*/desplegable/*/
+.accordion-button{
+    background-color: #AC7878;
+    font-family: 'Red Hat Display', sans-serif; 
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #ffffff;
+    color: #78ACAC;
+}
+.collapse{
+    color: #797979;
+}
+.btn-primary{
+background-color: #78ACAC;
+border-color: #797979;
+}
+.btn-primary:hover{
+    background-color: #AC7878;
+    border-color: #FFFFFF;
+}

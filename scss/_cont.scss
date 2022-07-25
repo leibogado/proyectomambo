@@ -1,0 +1,170 @@
+ /*Contacto/*/
+ .contact-body{
+    font-family: 'Red Hat Display', sans-serif; 
+    background: linear-gradient(to bottom, #AC7878, white);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0%;
+    padding-bottom: 1rem;
+    color: #FFFFFF;
+}
+.contact_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact_main-S1{
+    font-family: 'Red Hat Display', sans-serif; 
+    font-weight: normal;
+    color: #FFFFFF;
+    background-color: #AC7878;
+    border-radius: 2rem;
+    width: 20rem;
+    padding: 3rem;
+    font-size: large;
+    margin: 2rem;
+}
+.contenedor-formulario{
+    background-color: #AC7878;
+    margin-top: 1rem;
+    padding: 0.5rem;
+
+}
+.formulario{
+    background-color: #FFFFFF;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: left;
+    padding: 1rem;
+    color: #78ACAC;
+    height: 100%;
+}
+.rellenar{
+    align-items: center;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif; 
+    border:1px solid #ffffff;
+    border-radius:3px;
+    background-color:#f6f6f6;			
+    resize:none;
+    display:block;
+    align-content: center;
+}
+.enviar_contact{
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Red Hat Display', sans-serif; 
+    font-weight: bold;
+    color: #78ACAC;
+    background-color: #797979;
+    justify-content: center;
+    border:1px solid #ffffff;
+    margin: 1rem;
+ }
+ .contact_main-S2{
+    font-family: 'Red Hat Display', sans-serif; 
+    font-weight: normal;
+    color: #FFFFFF;
+    background-color: #AC7878;
+    border-radius: 2rem;
+    width: 20rem;
+    padding: 3rem;
+    font-size: large;
+    margin: 2rem;
+}
+ /*CONTACTO en Tablet pages/*/
+ @media only screen and (min-width: 768px) and (max-width: 1024px){
+    .contact_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-content: safe;
+        font-size: medium;
+    }
+    .formulario{
+        background-color: #FFFFFF;
+        font-family: 'Red Hat Display', sans-serif;
+        text-align: left;
+        padding: 1rem;
+        color: #78ACAC;
+        margin: 1rem;
+        justify-content: center;
+    }
+    .rellenar{
+        align-items: center;
+        text-align: center;
+        font-family: 'Red Hat Display', sans-serif; 
+        border:1px solid #ffffff;
+        border-radius:3px;
+        background-color:#f6f6f6;			
+        resize:none;
+        display:block;
+        align-content: center;
+        justify-content: center;
+    }
+    .contact_main-S1{
+        margin: 0%;
+
+    }
+    .contact_main-S2{
+        margin: 0%;
+    }
+}
+ 
+ /*CONTACTO Mobile/*/
+@media only screen and (max-width: 768px){
+    .contact_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .contact_main-S1{
+        margin: 0%;
+        background-color: #79797980;
+        padding: 1rem;
+    }
+    .contact_main-S2{
+        margin: 0%;
+        background-color: #79797980;
+        padding: 1rem;
+    }
+    .formulario{
+        font-family: 'Red Hat Display', sans-serif;
+        text-align: left;
+        padding: 1rem;
+        color: #78ACAC;
+        margin: 1rem;
+        justify-content: center;
+    }
+    .rellenar{
+        align-items: center;
+        text-align: center;
+        font-family: 'Red Hat Display', sans-serif; 
+        border:1px solid #ffffff;
+        border-radius:3px;
+        background-color:#f6f6f6;			
+        resize:none;
+        display:block;
+        align-content: center;
+        justify-content: center;
+    }
+    .contenedor-formulario{
+        margin: 0%;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .contact_main-textoarq{
+        font-family: 'Red Hat Display', sans-serif; 
+        font-weight: normal;
+        font-size: medium;
+        color: #FFFFFF;
+
+    }
+}

@@ -1,0 +1,215 @@
+/*Diseño/*/
+.dise-body{
+background: linear-gradient(to bottom, #797979, white);
+padding-left: 1rem;
+padding-right: 1rem;
+}
+
+.dise-manuales{
+font-family: 'Red Hat Display', sans-serif; 
+text-decoration: none;
+font-weight: bold;
+text-align: center;
+font-size:large;
+color: #FFFFFF;
+display:flex;
+flex-direction: column;
+background-color: #79797980;
+border-radius: 2rem;
+padding: 2rem;
+margin: 1rem;
+}
+.dise-visual{
+font-family: 'Red Hat Display', sans-serif; 
+text-decoration: none;
+font-weight: bold;
+text-align: center;
+font-size:large;
+color: #FFFFFF;
+display:flex;
+flex-direction: column;
+background-color: #79797980;
+border-radius: 2rem;
+padding: 2rem;
+margin: 1rem;
+}
+.dise-diseñouxui{
+font-family: 'Red Hat Display', sans-serif; 
+text-decoration: none;
+font-weight: bold; 
+text-align: center;
+font-size:large;
+color: #FFFFFF;
+display:flex;
+flex-direction: column;
+background-color: #79797980;
+border-radius: 2rem;
+padding: 2rem;
+margin: 1rem;
+}
+.dise_main_article-textos{
+font-family: 'Red Hat Display', sans-serif; 
+text-decoration: none;
+}
+.dise_main-textoppal{
+font-weight: normal;
+font-size: 2rem;
+color: #FFFFFF;
+width: 20rem;
+}
+
+.dise_main-btnverproyectos{
+text-decoration: none;
+text-align: center;
+margin: 1rem;
+border-radius: 1rem;
+padding : 1rem 1rem;
+white-space: 15rem;
+text-decoration: none;
+list-style-type: none;
+font-family: 'Red Hat Display', sans-serif; 
+font-weight: bold;
+color: #78ACAC;
+background-color: #797979;
+}
+.dise_main-ingresobehance{
+    display: inline
+}
+/*DISEÑO Grid galeria/*/
+.galeria-grid-dise{
+    margin-top: 2rem;
+}
+.grid-gallery {
+    display: grid;
+    grid-auto-rows: 200px;
+    gap: 1rem;
+    grid-auto-flow: row dense;
+}
+.grid-gallery__image{
+    border-radius: 0.5rem;
+}
+
+@media all and (min-width: 320px) {
+    .grid-gallery {
+        grid-template-columns: repeat(1, 1fr);
+}
+}
+
+@media all and (min-width: 768px) {
+.grid-gallery {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media all and (min-width: 992px) {
+.grid-gallery {
+    grid-template-columns: repeat(6, 1fr);
+}
+}
+.grid-gallery__item:nth-child(11n+1) {
+    grid-column: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+4) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+6) {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+7) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.grid-gallery__item:nth-child(11n+8) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid-gallery__item:nth-child(11n+9) {
+    grid-row: span 3;
+}
+
+.grid-gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*DISEÑO en Tablet pages/*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .dise_main-trabajos{
+        display: flex;
+        flex-direction: column;
+    }
+.dise_main_article-textos{
+    font-family: 'Red Hat Display', sans-serif; 
+    text-decoration: none;
+}
+.dise_main-textoppal{
+    font-weight: normal;
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-size: larger;
+}
+.dise_main-textoservicio{
+    font-weight: normal;
+    color: #FFFFFF;
+    background-color: #AC7878;
+    border-radius: 2rem;
+    width: 20rem;
+    padding: 3rem;
+    font-size: medium;
+}
+.dise_main-textodestacado{
+    font-weight: normal;
+    color: #78ACAC;
+    font-size: large;
+    background-color: #FFFFFF80;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+}
+/*DISEÑO Mobile/*/
+/*Arquitectura/*/
+.dise-body{
+    background: linear-gradient(to bottom, #797979, white);
+}
+/*/intro/*/
+.dise_main{
+    font-family: 'Red Hat Display', sans-serif; 
+    text-decoration: none;
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+.fs-4{
+    font-family: 'Red Hat Display', sans-serif; 
+    text-decoration: none;
+    font-weight: lighter;
+}
+.bg-dark{
+    background: linear-gradient(to bottom right, #AC7878, #78ACAC)!important;
+}
+.descripcionppal-dise{
+    margin: 0%;
+    padding: 1rem;
+
+}
+/*/cambios entre dispositivos/*/
+/*/desktop/*/
+@media only screen and (min-width: 992px){
+    .acordeon_dise{
+        display: none;
+    }
+}
+/*/visibilidad de portada mobile y tablet/*/
+@media only screen and (max-width: 768px){
+    .especificacion-arq{
+        display: none;
+    }
+}
