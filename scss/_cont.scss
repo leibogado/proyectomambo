@@ -1,12 +1,12 @@
  /*Contacto/*/
  .contact-body{
-    font-family: 'Red Hat Display', sans-serif; 
-    background: linear-gradient(to bottom, #AC7878, white);
+    font-family: $generalfont; 
+    background: linear-gradient(to bottom, $colorSecundario-b, $colorSecundario-a);
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 0%;
     padding-bottom: 1rem;
-    color: #FFFFFF;
+    color: $colorSecundario-a;
 }
 .contact_main{
     display: flex;
@@ -14,10 +14,10 @@
     justify-content: space-between;
 }
 .contact_main-S1{
-    font-family: 'Red Hat Display', sans-serif; 
+    font-family: $generalfont; 
     font-weight: normal;
-    color: #FFFFFF;
-    background-color: #AC7878;
+    color: $colorSecundario-a;
+    background-color: $colorSecundario-b;
     border-radius: 2rem;
     width: 20rem;
     padding: 3rem;
@@ -25,24 +25,24 @@
     margin: 2rem;
 }
 .contenedor-formulario{
-    background-color: #AC7878;
+    background-color: $colorSecundario-b;
     margin-top: 1rem;
     padding: 0.5rem;
 
 }
 .formulario{
-    background-color: #FFFFFF;
-    font-family: 'Red Hat Display', sans-serif;
+    background-color:$colorSecundario-a;
+    font-family: $generalfont;
     text-align: left;
     padding: 1rem;
-    color: #78ACAC;
+    color: $colorPrincipal;
     height: 100%;
 }
 .rellenar{
     align-items: center;
     text-align: center;
-    font-family: 'Red Hat Display', sans-serif; 
-    border:1px solid #ffffff;
+    font-family: $generalfont; 
+    border:1px solid $colorSecundario-a;
     border-radius:3px;
     background-color:#f6f6f6;			
     resize:none;
@@ -59,19 +59,18 @@
     padding-right: 3rem;
     text-decoration: none;
     list-style-type: none;
-    font-family: 'Red Hat Display', sans-serif; 
+    font-family: $generalfont; 
     font-weight: bold;
-    color: #78ACAC;
+    color: $colorPrincipal;
     background-color: #797979;
     justify-content: center;
-    border:1px solid #ffffff;
+    border:1px solid $colorSecundario-a;
     margin: 1rem;
 }
 .contact_main-S2{
-    font-family: 'Red Hat Display', sans-serif; 
-    font-weight: normal;
-    color: #FFFFFF;
-    background-color: #AC7878;
+    font-family: $generalfont; 
+    color: $colorSecundario-a;
+    background-color: $colorSecundario-b;
     border-radius: 2rem;
     width: 20rem;
     padding: 3rem;
@@ -88,8 +87,8 @@
         font-size: medium;
     }
     .formulario{
-        background-color: #FFFFFF;
-        font-family: 'Red Hat Display', sans-serif;
+        background-color: $colorSecundario-a;
+        font-family: $generalfont;
         text-align: left;
         padding: 1rem;
         color: #78ACAC;
@@ -99,10 +98,10 @@
     .rellenar{
         align-items: center;
         text-align: center;
-        font-family: 'Red Hat Display', sans-serif; 
-        border:1px solid #ffffff;
+        font-family: $generalfont; 
+        border:1px solid $colorSecundario-a;
         border-radius:3px;
-        background-color:#f6f6f6;			
+        background-color:$colorSecundario-a;			
         resize:none;
         display:block;
         align-content: center;
@@ -135,20 +134,20 @@
         padding: 1rem;
     }
     .formulario{
-        font-family: 'Red Hat Display', sans-serif;
+        font-family: $generalfont;
         text-align: left;
         padding: 1rem;
-        color: #78ACAC;
+        color: $colorPrincipal;
         margin: 1rem;
         justify-content: center;
     }
     .rellenar{
         align-items: center;
         text-align: center;
-        font-family: 'Red Hat Display', sans-serif; 
-        border:1px solid #ffffff;
+        font-family: $generalfont; 
+        border:1px solid $colorSecundario-a;
         border-radius:3px;
-        background-color:#f6f6f6;			
+        background-color:$colorSecundario-a;			
         resize:none;
         display:block;
         align-content: center;
@@ -161,10 +160,10 @@
 
     }
     .contact_main-textoarq{
-        font-family: 'Red Hat Display', sans-serif; 
+        font-family: $generalfont; 
         font-weight: normal;
         font-size: medium;
-        color: #FFFFFF;
+        color: $colorSecundario-a;
 
     }
 }

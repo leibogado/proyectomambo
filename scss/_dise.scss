@@ -1,6 +1,6 @@
 /*Diseño/*/
 .dise-body{
-background: linear-gradient(to bottom, $colorSecundario-c, white);
+background: linear-gradient(to bottom, $colorSecundario-c, $colorSecundario-a);
 padding-left: 1rem;
 padding-right: 1rem;
 }
@@ -10,6 +10,7 @@ padding-right: 1rem;
     margin-top: 2rem;
 }
 .grid-gallery {
+    margin-top: 1rem;
     display: grid;
     grid-auto-rows: 200px;
     gap: 1rem;
@@ -22,19 +23,19 @@ padding-right: 1rem;
 @media all and (min-width: 320px) {
     .grid-gallery {
         grid-template-columns: repeat(1, 1fr);
-}
+    }
 }
 
 @media all and (min-width: 768px) {
-.grid-gallery {
-    grid-template-columns: repeat(3, 1fr);
-}
+    .grid-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media all and (min-width: 992px) {
-.grid-gallery {
-    grid-template-columns: repeat(6, 1fr);
-}
+    .grid-gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
 .grid-gallery__item:nth-child(11n+1) {
     grid-column: span 1;
@@ -75,7 +76,7 @@ padding-right: 1rem;
     font-family: 'Red Hat Display', sans-serif; 
     text-decoration: none;
     font-weight: lighter;
-    color: #FFFFFF;
+    color: $colorSecundario-a;
 }
 .fs-4{
     font-family: 'Red Hat Display', sans-serif; 
@@ -83,7 +84,7 @@ padding-right: 1rem;
     font-weight: lighter;
 }
 .bg-dark{
-    background: linear-gradient(to bottom right, #AC7878, #78ACAC)!important;
+    background: linear-gradient(to bottom right, $colorSecundario-b, $colorPrincipal)!important;
 }
 .descripcionppal-dise{
     margin: 0%;
@@ -99,7 +100,7 @@ padding-right: 1rem;
 }
 /*/visibilidad de portada mobile y tablet/*/
 @media only screen and (max-width: 768px){
-    .especificacion-arq{
+    .especificacion-dise{
         display: none;
     }
 }

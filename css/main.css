@@ -128,6 +128,14 @@
 .bd-placeholder-img {
   border-radius: 0.5rem; }
 
+.iso-card-index {
+  width: 3rem;
+  margin: 1rem; }
+
+.boton-card-main {
+  padding: 1rem;
+  margin: 0.5rem; }
+
 /*Nosotros/*/
 .nos-body {
   background: linear-gradient(to bottom, #AC7878, #FFFFFF);
@@ -138,12 +146,7 @@
   font-family: "Red Hat Display", sans-serif; }
 
 /*main nos en Desktop/*/
-@media only screen and (min-width: 1020px) {
-  .nos_main {
-    display: flex;
-    flex-direction: row;
-    padding: 2rem;
-    margin-left: 10rem; }
+@media only screen and (min-width: 992px) {
   .nos_main-article-cvs {
     display: flex;
     flex-direction: row;
@@ -153,10 +156,6 @@
     background: linear-gradient(to bottom right, #AC7878, #78ACAC);
     font-family: "Red Hat Display", sans-serif;
     color: #FFFFFF;
-    text-decoration: none;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
     border-radius: 3rem;
     margin: 1rem;
     position: relative; }
@@ -169,29 +168,10 @@
     justify-content: space-evenly;
     align-items: center; }
   .cvs-h2 {
-    font-weight: bold; }
-  .cvs-h3 {
-    font-weight: normal; }
-  .cvs-p {
-    padding-bottom: 1rem; }
-  .nos_fondolineal-acercade {
-    display: flex;
-    flex-direction: row;
-    justify-items: end;
-    font-size: medium;
-    border-radius: 2rem; }
-  .nos-acercade {
-    width: 20rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    font-size: xx-large;
-    font-weight: normal; } }
+    font-weight: bold; } }
 
 /*main nos en Tablet/*/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .nos_main {
-    display: flex;
-    flex-direction: column-reverse; }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .nos_main-article-cvs {
     display: flex;
     flex-direction: row;
@@ -200,60 +180,24 @@
     border-radius: 10%;
     background-color: #79797980; }
   .cvs {
-    font-family: 'Red Hat Display', sans-serif;
-    text-decoration: none;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
+    font-family: "Red Hat Display", sans-serif;
     border-radius: 3rem;
     margin: 1rem;
     position: relative; }
   .cvs-div {
     padding: 1rem;
     margin: 1rem;
-    width: 15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; }
+    width: 15rem; }
   .cvs-h2 {
-    font-weight: bold; }
-  .cvs-h3 {
-    font-weight: normal; }
-  .cvs-p {
-    padding-bottom: 1rem; }
-  .nos_fondolineal-acercade {
-    font-family: 'Red Hat Display', sans-serif;
-    text-decoration: none;
-    text-align: left;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-items: end;
-    font-size: medium;
-    border-radius: 2rem; }
-  .nos-acercade {
-    width: 20rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    font-size: xx-large;
-    font-weight: normal; } }
+    font-weight: bold; } }
 
 /*main nos en Mobile/*/
 @media only screen and (max-width: 768px) {
-  .nos_main {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center; }
   .nos_main-article-cvs {
     display: flex;
     flex-direction: column; }
   .cvs {
-    font-family: 'Red Hat Display', sans-serif;
-    text-decoration: none;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
+    font-family: "Red Hat Display", sans-serif;
     border-radius: 3rem;
     margin: 1rem;
     font-size: small; }
@@ -266,42 +210,22 @@
     border-radius: 2rem; }
   .cvs-h2 {
     font-weight: bold; }
-  .cvs-h3 {
-    font-weight: normal; }
   .cvs-p {
-    padding-bottom: 1rem;
-    display: none; }
-  .nos_fondolineal-acercade {
-    font-family: 'Red Hat Display', sans-serif;
-    text-decoration: none;
-    color: #FFFFFF;
-    text-align: left;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-items: end;
-    font-size: medium;
-    border-radius: 2rem; }
-  .nos-acercade {
-    width: 20rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    font-size: medium;
-    font-weight: normal; } }
+    display: none; } }
 
 /*Arquitectura/*/
 .arq-body {
-  background: linear-gradient(to bottom, #797979, white); }
+  background: linear-gradient(to bottom, #797979, #FFFFFF); }
 
 /*/intro/*/
 .arq_main {
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   text-decoration: none;
   font-weight: lighter;
   color: #FFFFFF; }
 
 .fs-4 {
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   text-decoration: none;
   font-weight: lighter; }
 
@@ -386,7 +310,7 @@
 
 /*/ajustes de cards/*/
 .card-text {
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   text-decoration: none;
   color: #797979; }
 
@@ -410,7 +334,7 @@
   opacity: 50%; }
 
 .card-title {
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   text-decoration: none;
   color: #78ACAC;
   font-weight: bold; }
@@ -424,7 +348,7 @@
   color: #FFFFFF; }
 
 .accordion-button:not(.collapsed) {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   color: #78ACAC; }
 
 .collapse {
@@ -433,14 +357,13 @@
 .btn-primary {
   background-color: #78ACAC;
   border-color: #797979; }
-
-.btn-primary:hover {
-  background-color: #AC7878;
-  border-color: #FFFFFF; }
+  .btn-primary:hover {
+    background-color: #AC7878;
+    border-color: #FFFFFF; }
 
 /*Diseño/*/
 .dise-body {
-  background: linear-gradient(to bottom, #797979, white);
+  background: linear-gradient(to bottom, #797979, #FFFFFF);
   padding-left: 1rem;
   padding-right: 1rem; }
 
@@ -449,6 +372,7 @@
   margin-top: 2rem; }
 
 .grid-gallery {
+  margin-top: 1rem;
   display: grid;
   grid-auto-rows: 200px;
   gap: 1rem;
@@ -523,13 +447,13 @@
 
 /*/visibilidad de portada mobile y tablet/*/
 @media only screen and (max-width: 768px) {
-  .especificacion-arq {
+  .especificacion-dise {
     display: none; } }
 
 /*Contacto/*/
 .contact-body {
-  font-family: 'Red Hat Display', sans-serif;
-  background: linear-gradient(to bottom, #AC7878, white);
+  font-family: "Red Hat Display", sans-serif;
+  background: linear-gradient(to bottom, #AC7878, #FFFFFF);
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0%;
@@ -542,7 +466,7 @@
   justify-content: space-between; }
 
 .contact_main-S1 {
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   font-weight: normal;
   color: #FFFFFF;
   background-color: #AC7878;
@@ -559,7 +483,7 @@
 
 .formulario {
   background-color: #FFFFFF;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   text-align: left;
   padding: 1rem;
   color: #78ACAC;
@@ -568,8 +492,8 @@
 .rellenar {
   align-items: center;
   text-align: center;
-  font-family: 'Red Hat Display', sans-serif;
-  border: 1px solid #ffffff;
+  font-family: "Red Hat Display", sans-serif;
+  border: 1px solid #FFFFFF;
   border-radius: 3px;
   background-color: #f6f6f6;
   resize: none;
@@ -586,17 +510,16 @@
   padding-right: 3rem;
   text-decoration: none;
   list-style-type: none;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   font-weight: bold;
   color: #78ACAC;
   background-color: #797979;
   justify-content: center;
-  border: 1px solid #ffffff;
+  border: 1px solid #FFFFFF;
   margin: 1rem; }
 
 .contact_main-S2 {
-  font-family: 'Red Hat Display', sans-serif;
-  font-weight: normal;
+  font-family: "Red Hat Display", sans-serif;
   color: #FFFFFF;
   background-color: #AC7878;
   border-radius: 2rem;
@@ -615,7 +538,7 @@
     font-size: medium; }
   .formulario {
     background-color: #FFFFFF;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: "Red Hat Display", sans-serif;
     text-align: left;
     padding: 1rem;
     color: #78ACAC;
@@ -624,10 +547,10 @@
   .rellenar {
     align-items: center;
     text-align: center;
-    font-family: 'Red Hat Display', sans-serif;
-    border: 1px solid #ffffff;
+    font-family: "Red Hat Display", sans-serif;
+    border: 1px solid #FFFFFF;
     border-radius: 3px;
-    background-color: #f6f6f6;
+    background-color: #FFFFFF;
     resize: none;
     display: block;
     align-content: center;
@@ -652,7 +575,7 @@
     background-color: #79797980;
     padding: 1rem; }
   .formulario {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: "Red Hat Display", sans-serif;
     text-align: left;
     padding: 1rem;
     color: #78ACAC;
@@ -661,10 +584,10 @@
   .rellenar {
     align-items: center;
     text-align: center;
-    font-family: 'Red Hat Display', sans-serif;
-    border: 1px solid #ffffff;
+    font-family: "Red Hat Display", sans-serif;
+    border: 1px solid #FFFFFF;
     border-radius: 3px;
-    background-color: #f6f6f6;
+    background-color: #FFFFFF;
     resize: none;
     display: block;
     align-content: center;
@@ -674,7 +597,7 @@
     justify-content: center;
     align-items: center; }
   .contact_main-textoarq {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: "Red Hat Display", sans-serif;
     font-weight: normal;
     font-size: medium;
     color: #FFFFFF; } }

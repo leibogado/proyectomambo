@@ -1,21 +1,22 @@
 /*Arquitectura/*/
 .arq-body{
-    background: linear-gradient(to bottom, #797979, white);
+    background: linear-gradient(to bottom, $colorSecundario-c, $colorSecundario-a);
 }
 /*/intro/*/
+
 .arq_main{
-    font-family: 'Red Hat Display', sans-serif; 
+    font-family: $generalfont; 
     text-decoration: none;
     font-weight: lighter;
-    color: #FFFFFF;
+    color: $colorSecundario-a;
 }
 .fs-4{
-    font-family: 'Red Hat Display', sans-serif; 
+    font-family: $generalfont; 
     text-decoration: none;
     font-weight: lighter;
 }
 .bg-dark{
-    background: linear-gradient(to bottom right, #AC7878, #78ACAC)!important;
+    background: linear-gradient(to bottom right, $colorSecundario-b, $colorPrincipal)!important;
 }
 .descripcionppal-arq{
     margin: 0%;
@@ -100,9 +101,9 @@
 }
 /*/ajustes de cards/*/
 .card-text{
-    font-family: 'Red Hat Display', sans-serif; 
+    font-family: $generalfont;
     text-decoration: none;
-    color: #797979;
+    color: $colorSecundario-c;
 }
 .card{
     margin: 1rem;
@@ -124,31 +125,31 @@
     opacity: 50%;
 }
 .card-title{
-    font-family: 'Red Hat Display', sans-serif; 
+    font-family: $generalfont;
     text-decoration: none;
-    color: #78ACAC;
+    color: $colorPrincipal;
     font-weight: bold;
 }
 /*/desplegable/*/
 .accordion-button{
-    background-color: #AC7878;
+    background-color: $colorSecundario-b;
     font-family: 'Red Hat Display', sans-serif; 
     text-decoration: none;
     font-weight: bold;
-    color: #FFFFFF;
+    color: $colorSecundario-a;
 }
 .accordion-button:not(.collapsed) {
-    background-color: #ffffff;
-    color: #78ACAC;
+    background-color: $colorSecundario-a;
+    color: $colorPrincipal;
 }
 .collapse{
-    color: #797979;
+    color: $colorSecundario-c;
 }
 .btn-primary{
-background-color: #78ACAC;
-border-color: #797979;
+background-color: $colorPrincipal;
+border-color: $colorSecundario-c;
+&:hover{
+    background-color: $colorSecundario-b;
+    border-color:$colorSecundario-a;
 }
-.btn-primary:hover{
-    background-color: #AC7878;
-    border-color: #FFFFFF;
 }
